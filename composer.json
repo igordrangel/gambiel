@@ -2,7 +2,7 @@
     "name": "igordrangel/gambiel",
     "description": "Usage for filtering on multidimational array by skeleton array",
     "type": "library",
-    "license": "MIT",
+    "license": "proprietary",
     "keywords": [
         "symfony",
         "skeleton",
