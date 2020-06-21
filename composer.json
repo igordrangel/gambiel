@@ -1,0 +1,15 @@
+{
+    "name": "igordrangel/gambiel",
+    "description": "Helper para filtro de Arrays Multidimencionais atrav\u0000s de um esqueleto em formato de Array",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Igor D. Rangel",
+            "email": "igordrangel@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    }
+}
