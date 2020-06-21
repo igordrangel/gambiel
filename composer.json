@@ -3,6 +3,7 @@
     "description": "Usage for filtering on multidimational array by skeleton array",
     "type": "library",
     "license": "proprietary",
+    "homepage": "https://github.com/igordrangel/gambiel",
     "keywords": [
         "symfony",
         "skeleton",
