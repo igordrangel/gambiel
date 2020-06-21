@@ -2,7 +2,7 @@
     "name": "igordrangel/gambiel",
     "description": "Helper para filtro de Arrays Multidimencionais atrav\u0000s de um esqueleto em formato de Array",
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Igor D. Rangel",
@@ -11,5 +11,10 @@
     ],
     "require": {
         "php": ">=7.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "GambiEl": "src"
+        }
     }
 }
