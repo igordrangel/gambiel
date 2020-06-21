@@ -1,8 +1,13 @@
 {
     "name": "igordrangel/gambiel",
-    "description": "Helper para filtro de Arrays Multidimencionais atrav\u0000s de um esqueleto em formato de Array",
+    "description": "Usage for filtering on multidimational array by skeleton array",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "symfony",
+        "skeleton",
+        "multidimational array"
+    ],
     "authors": [
         {
             "name": "Igor D. Rangel",
@@ -13,8 +18,8 @@
         "php": ">=7.3"
     },
     "autoload": {
-        "psr-0": {
-            "GambiEl": "src"
+        "psr-4": {
+            "GambiEl": "src/"
         }
     }
 }

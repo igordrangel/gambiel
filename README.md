@@ -1,5 +1,5 @@
 # GambiEl
-> Usage for filtering on multidimational array by sckeleton array
+> Usage for filtering on multidimational array by skeleton array
 ## Install
 ```
 composer require igordrangel/gambiel
@@ -26,7 +26,7 @@ class BancosController{
      */
     public function get(Request $request): Response {
         $params = $request->query->all();
-        $sckeleton = json_decode($request->headers->get('query') ?? '', true);
+        $skeleton = json_decode($request->headers->get('query') ?? '', true);
         $result = [
             "users" => []
         ];
@@ -42,7 +42,7 @@ class BancosController{
                     GambiEl::add("email",$user->getEmail(), $showEmail),
                     GambiEl::add("status",$user->getStatus())
                 ), 
-                $sckeleton
+                $skeleton
             ));
         }
     }
