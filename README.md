@@ -2,18 +2,18 @@
 > Usage for filtering on multidimational array by skeleton array
 ## Install
 ```
-composer require igordrangel/gambiel
+composer require igordrangel/gambiel-response-query
 ```
 
 ### Usage
 ```bash
 $query = ["id" => ""];
-$data = GambiEl::new(
-    GambiEl::add("id","1")
-    GambiEl::add("name","Igor")
-    GambiEl::add("status",true)
+$data = ResponseQuery::new(
+    ResponseQuery::add("id","1")
+    ResponseQuery::add("name","Igor")
+    ResponseQuery::add("status",true)
 );
-$result = GambiEl::query($data, $query);
+$result = ResponseQuery::query($data, $query);
 printr($result); // ["id" => "1"]
 ```
 > You can use for quering request API by Header
@@ -36,11 +36,11 @@ class BancosController{
         
         foreach ($this->userRepository->Search() as $user) {
             array_push($result['users'], GambiEl::query(
-                GambiEl::new(
-                    GambiEl::add("id",$user->getId()),
-                    GambiEl::add("name",$user->getName()),
-                    GambiEl::add("email",$user->getEmail(), $showEmail),
-                    GambiEl::add("status",$user->getStatus())
+                ResponseQuery::new(
+                    ResponseQuery::add("id",$user->getId()),
+                    ResponseQuery::add("name",$user->getName()),
+                    ResponseQuery::add("email",$user->getEmail(), $showEmail),
+                    ResponseQuery::add("status",$user->getStatus())
                 ), 
                 $skeleton
             ));

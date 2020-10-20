@@ -1,7 +1,8 @@
 <?php
-	declare(strict_types=1);
 	
-	class GambiEl {
+	namespace GambiEl\Helpers;
+	
+	class ResponseQuery {
 		/**
 		 * Filter data by query Array
 		 * @param array $data Data creating by new method on GambiEl.new
