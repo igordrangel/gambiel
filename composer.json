@@ -1,4 +1,5 @@
 {
+    "version": "1.1",
     "name": "igordrangel/gambiel-response-query",
     "description": "Usage for filtering on multidimational array by skeleton array",
     "type": "library",
