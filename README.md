@@ -1,4 +1,4 @@
-# GambiEl
+# GambiEl Response Query
 > Usage for filtering on multidimational array by skeleton array
 ## Install
 ```
