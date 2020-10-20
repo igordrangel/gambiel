@@ -1,5 +1,4 @@
 <?php
-	
 	namespace GambiEl\Helpers;
 	
 	class ResponseQuery {
