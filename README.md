@@ -35,7 +35,7 @@ class BancosController{
         $showEmail = false;
         
         foreach ($this->userRepository->Search() as $user) {
-            array_push($result['users'], GambiEl::query(
+            array_push($result['users'], ResponseQuery::query(
                 ResponseQuery::new(
                     ResponseQuery::add("id",$user->getId()),
                     ResponseQuery::add("name",$user->getName()),
